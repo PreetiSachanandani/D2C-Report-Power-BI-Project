@@ -1,10 +1,14 @@
 # D2C-Report-Power-BI-Project
 This synthetic dataset simulates the operations of a Direct-to-Consumer (D2C) skincare e-commerce business.We shall build and implement a data solution using Microsoft Power BI as the client is already using Microsoft technology.
+
+
 GOAL:
 The project aims at building and implementing a data solution that includes:
 •	Power BI Report ( Customer Analytics, Revenue Analytics, Product Profitability Analysis, Customer Lifetime Value (CLV), RFM Segmentation, Return Analysis)
 •	E-Commerce Business Intelligence
 •	Data Cleaning & Modeling Practice
+
+
 STEPS:
 Layer	Tool
 Data Source	Excel / CSV
@@ -14,6 +18,8 @@ Data Warehouse	Power BI Model
 Semantic Layer	Power BI
 BI Layer	Power BI Dashboard
 AI Layer	Python forecasting
+
+
 DATA PIPELINE
 Step 1 — Data Ingestion
 In this step, we shall see how raw operational data is ingested into the analytics platform.
