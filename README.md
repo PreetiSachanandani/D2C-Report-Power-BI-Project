@@ -78,7 +78,7 @@ KPIs include:
 •	Orders 
 •	Customer count
 •	Profit Margin
-•	Returns rate
+•	Returns rate\
 Visuals include:
 •	Month on Month Sales
 •	Sales by Payment method: helps in ascertaining preferred payment method
@@ -92,7 +92,7 @@ Visuals include:
 •	Top 20 customers with the help of CLV
 •	New Customers per Month over years
 
-Sheet4: RFM SEGMENTATION 
+### Sheet4: RFM SEGMENTATION 
 Visuals include:
 •	Customer Segmentation 
 •	Sales by Customer Segmentation category
@@ -101,7 +101,7 @@ Visuals include:
 KPIs include:
 •	Total Profit
 •	Total Sales
-•	Profit Margin
+•	Profit Margin\
 Visuals include:
 •	Total Sales by Key Ingredient  
 •	Category-wise Profit 
@@ -111,7 +111,7 @@ Visuals include:
 ### Sheet6: Customer Experience and Return 
 KPIs include:
 •	Return %
-•	Average Rating
+•	Average Rating\
 Visuals include:
 •	Most Returned Products chart
 •	Refund Status for Returned Products
