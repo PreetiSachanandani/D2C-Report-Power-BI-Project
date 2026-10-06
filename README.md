@@ -10,14 +10,13 @@ The project aims at building and implementing a data solution that includes:
 
 
 STEPS:
-Layer	Tool
-Data Source	Excel / CSV
-Data Ingestion	Power Query / Python
-Data Engineering	SQL
-Data Warehouse	Power BI Model
-Semantic Layer	Power BI
-BI Layer	Power BI Dashboard
-AI Layer	Python forecasting
+Layer	Tool\
+Data Source	Excel / CSV\
+Data Ingestion	Power Query / Python\
+Data Engineering	SQL\
+Semantic Layer	Power BI\
+BI Layer	Power BI Dashboard\
+AI Layer	Python forecasting\
 
 
 DATA PIPELINE
