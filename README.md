@@ -16,19 +16,19 @@ Data Ingestion	Power Query / Python\
 Data Engineering	SQL\
 Semantic Layer	Power BI\
 BI Layer	Power BI Dashboard\
-AI Layer	Python forecasting\
+AI Layer	Python forecasting
 
 
-DATA PIPELINE
-Step 1 — Data Ingestion
+## DATA PIPELINE
+# Step 1 — Data Ingestion
 In this step, we shall see how raw operational data is ingested into the analytics platform.
 Tool: Power Query ingestion
 All the files are imported in Power BI using Get Data tab.
 
-Step 2 — Data Engineering 
+# Step 2 — Data Engineering 
 Once the raw data is ingested in the system the first step is creating relationships between the Fact and Dimension tables. Most of the relationships are formed automatically. 
 
-TRANSFORMATIONS: 
+## TRANSFORMATIONS: 
 1.	Lets first create a separate Date Table , add columns for time intelligence functions to work properly, such as Date, Day, Quarter, Month, Year and ensure to “Mark as a date table”.
 2.	Checking for Date column in all the data files and simplify them to Short Format and convert them so that they can form relationship with Date Table.
 3.	For all the data tables, turn on Column Quality, Column Distribution and Column Profile, skim through for each table for data discrepancies.
@@ -37,23 +37,23 @@ TRANSFORMATIONS:
 6.	For the Cancelled orders, the profit appears as Loss, hence Profit is replaced with Zero for Cancelled and In Transit orders by creating a conditional column.
 7.	Handling 1 duplicate entry found in Fact Table: Remove Duplicates under Remove Rows applied to Fact_orders table. 
 
-Feature Engineering:
+## Feature Engineering:
 1. Delivery_Days = Delivery Date - Ship Date
 2. Profit = Gross Amount - Cost
 3. Discount Impact %
 4. CLV
 
-Data Validation Rules
+## Data Validation Rules
 Example:
 quantity > 0
 sales > cost
 delivery_days < 30
 
-Step 3 — Data Modelling
+## Step 3 — Data Modelling
 A star schema works best for this dataset as it ensures scalability and fast query performance:
-Fact Table:
+### Fact Table:
 •	Orders 
-Dimension Tables:
+### Dimension Tables:
 •	Customers 
 •	Products 
 •	Date 
@@ -61,16 +61,17 @@ Dimension Tables:
 •	Returns 
 •	Reviews
 
-Step 4 — Semantic Layer 
+## Step 4 — Semantic Layer 
 I have created following standardized metrics that shall provide meaning to the model:
 Total Sales	Customer Lifetime Value
 Total Profit	RFM
 Profit Margin	Average Rating
-Step 4 — BI Dashboard layer
 
-Sheet1: Introduction and Navigation
+## Step 5 — BI Dashboard layer
 
-Sheet2: Executive Overview: Sales Performance
+### Sheet1: Introduction and Navigation
+
+### Sheet2: Executive Overview: Sales Performance
 KPIs include:
 •	Revenue 
 •	Profit 
@@ -84,7 +85,7 @@ Visuals include:
 •	Sales Channel contribution to Sales and Profit
 •	Sales by Order Status 
 
-Sheet3: Customer Analytics and CLV
+### Sheet3: Customer Analytics and CLV
 Visuals include:
 •	Gender-wise contribution to Sales 
 •	Customers per Acquisition channel
@@ -96,7 +97,7 @@ Visuals include:
 •	Customer Segmentation 
 •	Sales by Customer Segmentation category
 
-Sheet5: Product Profitability 
+### Sheet5: Product Profitability 
 KPIs include:
 •	Total Profit
 •	Total Sales
@@ -107,7 +108,7 @@ Visuals include:
 •	Table showing Product Name, Profit Margin, Quantity sold and Cost Price
 
 
-Sheet6: Customer Experience and Return 
+### Sheet6: Customer Experience and Return 
 KPIs include:
 •	Return %
 •	Average Rating
